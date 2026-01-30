@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDF Roleplay | שרת ארפי צה״ל</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #050505, #0b1a14);
+  color: #fff;
+}
+
+header {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1e3d2b, #050505);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #9affc9;
+  text-shadow: 0 0 30px rgba(154,255,201,0.6);
+}
+
+header p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  opacity: 0.85;
+}
+
+.btn {
+  margin-top: 45px;
+  padding: 16px 45px;
+  background: linear-gradient(135deg, #1fa86b, #2bd48c);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 30px rgba(43,212,140,0.6);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+section {
+  padding: 90px 10%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+  color: #9affc9;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 35px 25px;
+  transition: 0.4s;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  background: rgba(43,212,140,0.15);
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  background: #020202;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>IDF ROLEPLAY</h1>
+  <p>שרת ארפי צה״ל ריאליסטי • משמעת • עומק • חוויה אמיתית</p>
+  <button class="btn" onclick="scrollToSection()">הצטרפו לשירות</button>
+</header>
+
+<section id="about">
+  <h2>מי אנחנו?</h2>
+  <p>
+    IDF Roleplay הוא שרת Roleplay מתקדם המדמה שירות צבאי אמיתי בצה״ל.<br>
+    השרת מבוסס על משמעת, היררכיה, פיקוד, חוקים ברורים וחוויית משחק עמוקה
+    המשלבת אימונים, מבצעים, סיורים, קורסים ופעילות מבצעית ריאליסטית.
+  </p>
+</section>
+
+<section>
+  <h2>חטיבות ויחידות</h2>
+  <div class="grid">
+    <div class="card">🪖 גולני – לחימה בשטח בנוי ופתוח</div>
+    <div class="card">🦅 צנחנים – פשיטות ומבצעים מיוחדים</div>
+    <div class="card">🛡️ מג״ב – ביטחון שוטף ואכיפה</div>
+    <div class="card">🎯 סיירות – מודיעין ולחימה מדויקת</div>
+    <div class="card">🚓 משטרה צבאית – סדר ומשמעת</div>
+  </div>
+</section>
+
+<section>
+  <h2>חוקי יסוד בשרת</h2>
+  <div class="grid">
+    <div class="card">❗ Roleplay מעל הכול – אין זלזול</div>
+    <div class="card">❗ פקודות מפקדים הן חובה</div>
+    <div class="card">❗ אין PowerGaming / MetaGaming</div>
+    <div class="card">❗ כבוד הדדי ושפה נקייה</div>
+  </div>
+</section>
+
+<section>
+  <h2>למה לבחור בנו?</h2>
+  <p>
+    ✔ צוות ניהול בוגר<br>
+    ✔ אימונים מסודרים וקורסים<br>
+    ✔ מערכת דרגות אמיתית<br>
+    ✔ מבצעים מתוכננים<br>
+    ✔ קהילה איכותית בלבד
+  </p>
+</section>
+
+<footer>
+  © 2026 IDF Roleplay | נבנה למקצוענים בלבד
+</footer>
+
+<script>
+function scrollToSection() {
+  document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
